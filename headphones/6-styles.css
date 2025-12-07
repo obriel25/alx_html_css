@@ -1,0 +1,68 @@
+/* Our results section */
+.our-results {
+  background: url("headphones_hero_2.jpg") center/cover no-repeat; /* bg headphones image */
+  padding: 80px 20px 120px;
+  color: #fff;
+}
+
+.results-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.results-text {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Four pentagon cards in a row */
+.results-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* .result-card {
+  width: 150px;
+  height: 150px;
+  background: url("pentagone.png") center/contain no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+} */
+.pentagon {
+  width: 150px; /* Adjust size as needed */
+  height: 142.5px; /* Adjust height relative to width for a regular pentagon */
+  background-color: rgb(230, 96, 19); /* Choose your desired color */
+  clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+  text-align: center;
+  justify-self: center;
+
+}
+.result-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.result-label {
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .results-grid {
+    justify-content: center;
+  }
+  .result-card {
+    margin-bottom: 25px;
+  }
+}

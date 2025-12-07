@@ -43,14 +43,15 @@
   background-color: rgb(230, 96, 19); /* Choose your desired color */
   clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
   text-align: center;
-  justify-self: center;
-
+  align-items: center;
 }
 .result-value {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 6px;
   text-align: center;
+  justify-self: center;
+  align-items: center;
 }
 
 .result-label {

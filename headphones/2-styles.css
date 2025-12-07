@@ -1,0 +1,59 @@
+/* Our results section */
+.our-results {
+  background: url("headphones_hero_2.jpg") center/cover no-repeat; /* bg headphones image */
+  padding: 80px 20px 120px;
+  color: #fff;
+}
+
+.results-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.results-text {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Four pentagon cards in a row */
+.results-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  width: 150px;
+  height: 150px;
+  background: url("pentagone.png") center/contain no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.result-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.result-label {
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .results-grid {
+    justify-content: center;
+  }
+  .result-card {
+    margin-bottom: 25px;
+  }
+}

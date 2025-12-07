@@ -1,0 +1,287 @@
+/* Reset / base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/* Header / hero background */
+header {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #111, #333);
+  background-image: url("headphones_hero_1.jpg");
+  padding: 20px 60px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.navbar a:hover {
+  color:  #FF6565;
+}
+
+/* Hide toggle icon on desktop for now */
+.toggle_btn {
+  display: none;
+}
+
+/* Hero text */
+.header-content {
+  max-width: 600px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.header-content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* CTA button */
+#button_container {
+  margin: 20px 0 30px;
+}
+
+#button_container button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff3366;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#button_container button:hover {
+  background-color: #e12657;
+}
+
+/* Second paragraph */
+#p2 {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 20px 60px;
+  }
+
+  .navbar ul {
+    display: none; /* you can later replace with a mobile menu */
+  }
+
+  .toggle_btn {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .header-content {
+    margin-top: 60px;
+  }
+
+  .header-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+
+main {
+  background-color: #fff;
+  color: #222;
+}
+
+/* What we do section */
+.what-we-do {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.what-we-do p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;         /* wraps nicely on small screens */
+}
+
+.features_card {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #ff3366;     /* change to match design */
+  display: inline-block;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .what-we-do {
+    margin: 40px auto;
+  }
+
+  .features {
+    gap: 20px;
+  }
+
+  .features_card {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Our results section */
+.our-results {
+  background: url("headphones_hero_2.jpg") center/cover no-repeat; /* bg headphones image */
+  padding: 80px 20px 120px;
+  color: #fff;
+}
+
+.results-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.results-text {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Four pentagon cards in a row */
+.results-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  width: 150px;
+  height: 150px;
+  background: url("pentagone.png") center/contain no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.result-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.result-label {
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .results-grid {
+    justify-content: center;
+  }
+  .result-card {
+    margin-bottom: 25px;
+  }
+}
+
+/* Contact form */
+
+.contact-form {
+  max-width: 500px;
+  
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Contact section centered on the page */
+#contact-us.section {
+  min-height: 100vh;              /* optional: full-height section */
+  display: flex;
+  align-items: center;            /* vertical center */
+}
+
+#contact-us .container {
+  margin: 0 auto;                 /* center container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;            /* center form + heading */
+  text-align: center;
+}
+
+/* Form width and layout */
+.contact-form {
+  width: 100%;
+  max-width: 420px;               /* controls form width */
+}
+
+.form-group {
+  width: 100%;
+  text-align: left;
+}
